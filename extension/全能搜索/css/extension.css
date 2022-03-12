@@ -1,0 +1,150 @@
+.Searcher {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.4);
+	z-index: 4;
+}
+
+.Searcher>.menu {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.Searcher>.content {
+	position: absolute;
+	left: 0;
+	top: 50px !important;
+	width: 100%;
+	height: calc(100% - 50px) !important;
+	background: none;
+	overflow-y: auto;
+}
+
+.Searcher>.content>.content-container>.content {
+	width: 100%;
+	height: 100%;
+}
+
+.Searcher>.content>.content-container>.content>.caption {
+	display: inline-block;
+	width: 100%;
+	height: auto;
+	margin: 0;
+}
+
+.Searcher>.content>.content-container>.content>.caption div {
+	position: static;
+	height: auto;
+}
+
+.Searcher>.menu>input {
+	position: absolute;
+	left: calc(50% - 100px);
+	top: calc(50% - 15px);
+	width: 200px;
+	height: 30px;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	border: 2px solid rgba(255, 255, 100, 0.4);
+	border-radius: 2px;
+	background: transparent;
+}
+
+.Searcher>.menu>.search {
+	position: absolute;
+	left: calc(50% + 115px);
+	top: calc(50% - 15px);
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: rgba(200, 200, 100, 0.5);
+}
+
+.Searcher>.menu>.clear {
+	position: absolute;
+	left: calc(50% + 190px);
+	top: calc(50% - 15px);
+	width: 95px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: rgba(200, 200, 100, 0.5);
+}
+
+
+.Searcher>.menu>.close {
+	position: absolute;
+	right: 5px;
+	top: calc(50% - 15px);
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background: red;
+}
+
+.updateContent {
+	top: 20%;
+	left: 20%;
+	width: 60%;
+	height: 60%;
+	background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+	overflow-y: scroll;
+}
+
+.updateContentClose {
+	position: absolute;
+	right: 0px;
+	width: 50px;
+	height: 50px;
+	background: silver;
+	border-radius: 25px;
+	box-shadow: 2px 2px 5px 0px black;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.updateContentClose:hover {
+	background: red;
+}
+
+.updateContentClose:before {
+	position: absolute;
+	content: '';
+	width: 30px;
+	height: 10px;
+	background: white;
+	transform: rotate(45deg);
+	top: 20px;
+	left: 10px;
+}
+
+.updateContentClose:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 10px;
+	background: white;
+	transform: rotate(-45deg);
+	top: 20px;
+	left: 10px;
+}
+
+.updateContentButton {
+	z-index: 100;
+	position: absolute;
+	bottom: 15px;
+	width: 30%;
+	left: 35%;
+}
